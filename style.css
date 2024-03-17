@@ -1,0 +1,37 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+.navbar{
+ 
+  
+}
+#buttons{
+  color: white;
+  background-color: black;
+
+.responsive{
+  width: 100%;
+  height: auto;
+} 
+
+#headline{
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  
+}
+.define{
+  
+}
+.about{
+  
+}
+.situation{
+  
+}
+.impact{
+  
+}
