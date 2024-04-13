@@ -4,88 +4,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Privacy Aware</title>
   <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
-  <script src="https://kit.fontawesome.com/f6bf5ad9af.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
+  <!--Playfair-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!--Inter-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <!-- Navbar content -->
-      <nav class="navbar">
-        <ul class = "links">
-          <li><a href = "index.html" >Home</a></li>
-          <li><a href = "about.html" >About</a></li>
-          <li><a href = "resources.html" >Resources</a>
-          <li><a href = "contact.html" >Contact Us</a>
 
-        </ul>
-        <div class= "bx-menu">
-          <i class="fa-solid fa-bars"></i>
+    <header>
+      <!--Navbar-->
+      <div class="navbar">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <div class="tabs" id="words">
+          <li><a href="about.html">About Us </a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
         </div>
-      </nav>
-      <!--Dropdown Menu -->
-      <div class="dropdown-menu">
-        <li><a href = "index.html" >Home</a></li>
-        <li><a href = "about.html" >About</a></li>
-        <li><a href = "resources.html" >Resources</a>
-        <li><a href = "contact.html" >Contact Us</a>
       </div>
     </header>
 
-    <!-- Hero section with layers -->
-    <div class="hero">
-            <img id = "bottom-pic"src = "img/hero1.png">
-             <img class="heroImg" id = "middle-pic"src = "img/hero4.png"alt="scroll">
-          <img class="heroImg" id = "top-pic"src = "img/hero3.png">
-       </div>
-     <div class = "title">
-           <h1 id = headline>Privacy Aware </h1>
-            <h3>  </h3> <!--catchphase-->
-
-     </div>
-
-    <!-- Content section -->
-    <div class="content">
-      <div class = "left-section">
-
-      <p id= "regular-font"><strong id = "bold"> Data Privacy </strong>is the protection of personal data from unauthorized access, ensuring individuals retain control over who can access their information. With over half of the world's population now using the internet, safeguarding data privacy has become increasingly crucial.</p>
-        </div>
-
-      <!--- About --->
-       <div class = "right-section">
-
-      <p id = "regular-font"><strong id = "bold"> Privacy Aware </strong> is a website designed with the everyday user in mind, aiming to empower individuals to better understand and assert their data privacy rights. Our platform equips users with the knowledge and tools necessary to navigate the complex landscape of online privacy, enabling them to take control of their personal data with confidence.  </p>
-
+    <!--Section 1-->
+    <div class = "section-1">
+      <h1 id = "title">Introducing Privacy Aware</h1>
+      <p class = "caption" id = "sub-title">Fortify Your Knowledge</p>
+      <div class="text-box">
+      <p  id = "words">On a mission to empower you with tools and knowledge for online privacy. Take confident control of your data with us. <br> Your privacy matters.</p>
+        <a href="about.html"><button class="button">About Us</button></a>
       </div>
-
-      <!--- Impact --->
-      <div class = "impact">
-      <h2>Impact</h2>
-        <h3>Trust Erosion</h3>
-        <p>Persistent breaches of privacy erode trust between users and service providers and weaken confidence in online interactions and transactions. This erosion of trust extends beyond individual businesses and platforms, affecting the overall credibility of digital environments. It can lead to a decline in consumer confidence, reluctance to share personal information, and increased skepticism towards digital services, hindering the growth of e-commerce and online engagement. Rebuilding trust requires transparent communication, robust security measures, and swift, decisive action in addressing privacy breaches.</p>
-
-        <h3> Discrimination</h3>
-        <p>The exposure or misuse of sensitive information can perpetuate systemic discrimination and prejudice, exacerbating existing inequalities and hindering societal progress. <br></br>This risk heightens the extensive data collection capabilities of the Internet of Things (IoT). IoT devices, interconnected with sensors and software, operate autonomously and exchange data over the internet. Without direct human intervention, these devices generate vast amounts of data across various domains, from household appliances to industrial machinery. <br></br>Similarly, traditional internet-connected devices like computers and smartphones, reliant on human interaction, are susceptible to the misuse of collected data, leading to discrimination. For example, data extracted from smartphones or computers, such as browsing history or location data, can be leveraged to profile individuals and influence biased decisions in employment, housing, healthcare, and other spheres. This misuse disproportionately affects marginalized groups, including racial minorities, LGBTQ+ individuals, people with disabilities, and low-income communities, heightening their vulnerability to discrimination stemming from such data.
-      </p>
-          <div>
-          <button type = "button"> Get Involved</button>
+    </div>
+    <!--Section 2-->
+    <div class = "section-2">
+          <div class = "left-side">
+            
           </div>
-  </div>
-        <!-- Situation--->
-        <div class = "situation">
-        <h2>Situation</h2>
-          <img src ="img/1.svg"> 
-          <p><strong>Increasing Data Collection:</strong> Rapid technological advancements have fueled a significant increase in personal data collection from various platforms, from social media platforms and smart devices to online services. This surge in data collection reflects the fact that 90% of the world's data was generated in the last two years alone. Experts project that in the next five years, global data collection will surpass 180 zettabytes, which equates to roughly one trillion gigabytes, equivalent to the storage capacity of billions of smartphones.</p>
-          <p><strong>Data Breaches:</strong> High-profile data breaches have continued to rise over the years, reaching up to 97 victims per hour. These breaches expose the sensitive information of millions of individuals to unauthorized access and potential misuse by cybercriminals, underscoring the vulnerability of personal data stored by organizations.</p>
-          <div>
-            <button type = "button"> Learn More</button>
+          <div class ="right-side">
+             <p  id = "words">Data privacy has far-reaching consequences often <br> overlooked by most users </p>
+            <p class = "heading" id = "headline" >Unraveling the Impact</p>
+             <div class="text-box2">
+            <p  id = "words">The influence of data privacy on society is profound, ranging from the significant rise in trust erosion to the perpetuation of inequalities exacerbating discrimination. </p>
+             </div>
+             <a href="news.html"><p  class = "arrow">Learn More --> </p></a>
           </div>
-        </div>
-         </div>
+    </div>
+    <!--Section 3-->
+    <div class = "section-3">
+          <div class = "left-side">
+             <p class = "heading" id = "headline" >Let's unlock the Current Landscape</p>
+            <div class="text-box3">
+              <p  id = "words">From the exponential growth in data collection to the alarming rise in data breaches, discover the trends shaping our digital world. </p>
+              <p id = "words">Dive deeper into the facts and figures behind these developments.</p>
+               <a href="news.html"><button class="button">Read More</button></a>
+               </div>
+            
+          </div>
+          <div class ="right-side">
+
+          </div>
+
+    </div>
+    <!--Section 4-->
+    <div class = "section-4">
+          <div class = "left-side2">
+
+          </div>
+          <div class ="right-side2">
+            <p class = "heading2" id = "headline" >Over 300 Million Terabytes Generated Daily</p>
+            <div class="text-box3">
+              <p  id = "words">To put that into perspective, it's like streaming HD movies continuously for thousands of years! This mind-boggling statistic underscores the sheer magnitude of information being collected about us every moment. From browsing habits to social media interactions, our every move contributes to this data deluge. It's a stark reminder of the vast digital footprint we leave behind and why safeguarding our personal information is more crucial than ever in today's data-driven world. </p>
+          </div>
+       </div>
+
+    </div>
+    <!--Section 5-->
+    <div class = "section-5">
+          <div class = "top">
+            <p  class = "topline" id = "line" >Call To Action</p>
+            <p  class = "heading3" id = "bold" >Protect Your Privacy: Sign Our Petition!</p>
+             <div class="text-box4">
+             <p  id = "words">Empower change in digital privacy! Advocate for stronger laws, hold corporations accountable, and raise awareness. Join us to protect personal information online and shape a safer, transparent future. </p>
+                </div>
+          </div>
+          <div class = "left-side">
+             <form id="form" action="/">
+                   <div class = "input-control">
+                <input id = "firstname" name = "firstname" type="text" placeholder="Enter First Name">
+                  <div class = "error"></div>
+                   </div>
+                      <div class = "input-control">
+                <input id = "lastname" name = "lastname"type="text" placeholder="Enter Last Name">
+            <div class = "error"></div>
+             </div>
+             <div class = "input-control">
+                <input id = "email" name = "email" type="email" placeholder="Enter Email Address">
+      <div class = "error"></div>
+       </div>
+            <button type = "submit" id = "action" class="button2">Sign Now</button>
+                </form>
+          </div>
+      
+          <div class ="right-side">
+
+            <div class="signup-container">
+            </div>
+          </div>
+
+    </div>
+    <!--Footer-->
+    <div class = "footer">
+
+    </div>
 
     <script src="script.js"></script>
   </body>
