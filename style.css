@@ -10,7 +10,12 @@ body::before {
   pointer-events: none;
   z-index: 9999;
 }
+body {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 
+}
 .navbar {
   background-color: #000;
   width: 100%;
@@ -21,75 +26,149 @@ body::before {
 }
 
 .section-1 {
-  background-color: rgba(7, 7, 7, 0.9);
   width: 100%;
   height: auto;
-  padding-top: 15%;
+  padding-top: 13%;
   padding-bottom: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
   text-align: center;
 }
 
 .section-2 {
-  background-color: #000;
   width: 100%;
   height: auto;
   padding-top: 12%;
   padding-bottom: 12%;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section-3 {
-  background-color: rgba(7, 7, 7, 0.9);
   width: 100%;
   height: auto;
   padding-top: 12%;
   padding-bottom: 12%;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section-4 {
-  background-color: #000;
   width: 100%;
   height: auto;
   padding-top: 12%;
   padding-bottom: 12%;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .section-5 {
-  background-color: rgba(7, 7, 7, 0.79);
   width: 100%;
   height: auto;
   padding-top: 5%;
   padding-bottom: 15%;
-  color: white;
-
 }
 
 .footer {
-  background-color: rgba(12, 12, 12, 0.97);
   width: 100%;
   height: auto;
   padding-top: 10%;
   padding-bottom: 10%;
+  background-color: rgba(12, 12, 12, 0.97);
+}
+
+.button {
+  width: 13rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.button2 {
+  width: 13rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: #27FFFF;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+/* Dark Mode Styles */
+.dark-mode .section-1,.dark-mode .section-2,
+.dark-mode .section-3, .dark-mode .section-4,
+.dark-mode .section-5,
+.dark-mode .footer, .dark-mode .top , .dark-mode .arrow{
   color: white;
 }
 
+.dark-mode .section-1,
+.dark-mode .section-3 {
+  background-color: rgba(7, 7, 7, 0.40);
+}
+.dark-mode .section-5{
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+.dark-mode .section-2,
+.dark-mode .section-4 {
+  background-color: #000;
+}
+
+
+.dark-mode .button {
+  background-color: #D9D9D9;
+}
+.dark-mode input{
+  color: white;
+}
+.dark-mode input::placeholder {
+    color: black;
+}
+/* Light Mode Styles */
+.light-mode .section-1, .light-mode.section-2,
+.light-mode .section-3, .light-mode .section-4,
+.light-mode .section-5,  .light-mode .footer, .light-mode  .top , .light-mode .arrow{
+  color: black;
+}
+.light-mode .section-1,
+.light-mode .section-3 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.light-mode.section-5{
+  background-color: #FFFDFD;
+}
+
+.light-mode .section-2,
+.light-mode .section-4{
+  background-color: #F1F0F0;
+}
+
+.light-mode input::placeholder {
+    color: white;
+}
+.light-mode .button {
+  background-color: black;
+  color: white;
+}
+.light-mode input{
+  color: white;
+}
+.light-mode .input-control input {
+  background-color: black; 
+}
+
+
+
 /*Universal*/
+.fontsize{
+  font-size: 17px;
+}
 .right-side {
   text-align: left;
   width: 50%;
@@ -100,16 +179,6 @@ body::before {
   text-align: left;
   width: 50%;
   margin-left: 50px;
-}
-
-.button {
-  width: 13rem;
-  height: 4rem;
-  font-size: 1.4rem;
-  text-decoration: none;
-  background-color: #D9D9D9;
-  cursor: pointer;
-  border: 1px solid transparent;
 }
 
 .text-box2 {
@@ -282,7 +351,6 @@ input:checked+.slider:before {
 
 /* Section 2*/
 .arrow {
-  color: white;
   font-size: 1.4rem;
   cursor: pointer;
 }
@@ -295,8 +363,6 @@ a {
 .heading2 {
   font-size: 2rem;
 }
-
-/* Need to work on spacing*/
 /* Section 4*/
 .left-side2 {
   width: 50%;
@@ -317,7 +383,6 @@ a {
 
 /*Section 5*/
 .top {
-  color: white;
   margin-left: 20px;
   text-align: center;
   display: flex;
@@ -346,72 +411,47 @@ input {
   float: right;
 }
 
-.button2 {
-  width: 13rem;
-  height: 4rem;
-  font-size: 1.4rem;
-  text-decoration: none;
-  background-color: #27FFFF;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
+
 /*Form */
 
 input {
   text-align: center;
   font-size: 16px;
-   height: 60px;
+  height: 60px;
   margin-bottom: 0%;
 }
+
 .input-control {
-    position: relative; 
-   margin-bottom: 40px;
+  position: relative; 
+  margin-bottom: 40px;
 }
 
 input::placeholder {
   font-size: 16px;
   padding-left: 20px;
   text-align: left;
-  color: #999;
 }
+
 input {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 .input-control {
-    position: relative;
+  position: relative;
 }
 
 .input-control input {
-    border: none; /* Remove default border */
-    border-bottom: 2px solid #d2d2d2; /* Default bottom border */
-    padding: 10px; /* Padding */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width */
+  border: none; 
+  padding: 10px;
+  width: 100%; 
+  box-sizing: border-box; 
+  border-bottom: 2px solid #d2d2d2; 
 }
-
 .input-control input:focus {
-    outline: 0;
-    border-bottom: 2px solid #09c372; /* Border color when focused */
+  outline: 0;
+  border-bottom: 3px solid #00f900; /* Border color when focused */
 }
-
-.input-control.error input {
-    border-bottom: 4px solid #ff3860; /* Only bottom border for error */
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 13px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-    position: absolute;
-    bottom: -40px; 
-    left: 0;
-
   /*Petition*/
   #signup-container {
     float: right;

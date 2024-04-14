@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
-  <body>
+  <body class="dark-mode">
 
     <header>
       <!--Navbar-->
@@ -40,20 +40,20 @@
       <h1 id = "title">Introducing Privacy Aware</h1>
       <p class = "caption" id = "sub-title">Fortify Your Knowledge</p>
       <div class="text-box">
-      <p  id = "words">On a mission to empower you with tools and knowledge for online privacy. Take confident control of your data with us. <br> Your privacy matters.</p>
+      <p class="fontsize" id = "words">On a mission to empower you with tools and knowledge for online privacy. Take confident control of your data with us. <br> Your privacy matters.</p>
         <a href="about.html"><button class="button">About Us</button></a>
       </div>
     </div>
     <!--Section 2-->
     <div class = "section-2">
           <div class = "left-side">
-            
+
           </div>
           <div class ="right-side">
-             <p  id = "words">Data privacy has far-reaching consequences often <br> overlooked by most users </p>
+             <p class="fontsize" id = "words">Data privacy has far-reaching consequences often <br> overlooked by most users </p>
             <p class = "heading" id = "headline" >Unraveling the Impact</p>
              <div class="text-box2">
-            <p  id = "words">The influence of data privacy on society is profound, ranging from the significant rise in trust erosion to the perpetuation of inequalities exacerbating discrimination. </p>
+            <p class="fontsize" id = "words">The influence of data privacy on society is profound, ranging from the significant rise in trust erosion to the perpetuation of inequalities exacerbating discrimination. </p>
              </div>
              <a href="news.html"><p  class = "arrow">Learn More --> </p></a>
           </div>
@@ -63,11 +63,11 @@
           <div class = "left-side">
              <p class = "heading" id = "headline" >Let's unlock the Current Landscape</p>
             <div class="text-box3">
-              <p  id = "words">From the exponential growth in data collection to the alarming rise in data breaches, discover the trends shaping our digital world. </p>
-              <p id = "words">Dive deeper into the facts and figures behind these developments.</p>
+              <p class="fontsize" id = "words">From the exponential growth in data collection to the alarming rise in data breaches, discover the trends shaping our digital world. </p>
+              <p class="fontsize" id = "words">Dive deeper into the facts and figures behind these developments.</p>
                <a href="news.html"><button class="button">Read More</button></a>
                </div>
-            
+
           </div>
           <div class ="right-side">
 
@@ -82,7 +82,7 @@
           <div class ="right-side2">
             <p class = "heading2" id = "headline" >Over 300 Million Terabytes Generated Daily</p>
             <div class="text-box3">
-              <p  id = "words">To put that into perspective, it's like streaming HD movies continuously for thousands of years! This mind-boggling statistic underscores the sheer magnitude of information being collected about us every moment. From browsing habits to social media interactions, our every move contributes to this data deluge. It's a stark reminder of the vast digital footprint we leave behind and why safeguarding our personal information is more crucial than ever in today's data-driven world. </p>
+              <p class="fontsize" id = "words">To put that into perspective, it's like streaming HD movies continuously for thousands of years! This mind-boggling statistic underscores the sheer magnitude of information being collected about us every moment. From browsing habits to social media interactions, our every move contributes to this data deluge. It's a stark reminder of the vast digital footprint we leave behind and why safeguarding our personal information is more crucial than ever in today's data-driven world. </p>
           </div>
        </div>
 
@@ -93,27 +93,27 @@
             <p  class = "topline" id = "line" >Call To Action</p>
             <p  class = "heading3" id = "bold" >Protect Your Privacy: Sign Our Petition!</p>
              <div class="text-box4">
-             <p  id = "words">Empower change in digital privacy! Advocate for stronger laws, hold corporations accountable, and raise awareness. Join us to protect personal information online and shape a safer, transparent future. </p>
+             <p class="fontsize" id = "words">Empower change in digital privacy! Advocate for stronger laws, hold corporations accountable, and raise awareness. Join us to protect personal information online and shape a safer, transparent future. </p>
                 </div>
           </div>
           <div class = "left-side">
-             <form id="form" action="/">
+             <form id="form" action="/submit" method="post">
                    <div class = "input-control">
-                <input id = "firstname" name = "firstname" type="text" placeholder="Enter First Name">
-                  <div class = "error"></div>
+                <input id = "firstname" name = "firstname" type="text" placeholder="First Name">
+                     <div class="error" id="firstNameError"></div>
                    </div>
                       <div class = "input-control">
-                <input id = "lastname" name = "lastname"type="text" placeholder="Enter Last Name">
-            <div class = "error"></div>
+                <input id = "lastname" name = "lastname"type="text" placeholder="Last Name">
+                        <div class="error" id="lastNameError"></div>
              </div>
              <div class = "input-control">
-                <input id = "email" name = "email" type="email" placeholder="Enter Email Address">
-      <div class = "error"></div>
+                <input id = "email" name = "email" type="email" placeholder="Email Address">
+                  <div class="error" id="emailError"></div>
        </div>
             <button type = "submit" id = "action" class="button2">Sign Now</button>
                 </form>
           </div>
-      
+
           <div class ="right-side">
 
             <div class="signup-container">

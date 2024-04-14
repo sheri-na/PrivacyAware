@@ -1,60 +1,22 @@
-const form = document.getElementById('form');
-const firstname = document.getElementById('firstname');
-const email = document.getElementById('email');
-const lastname = document.getElementById('lastname');
+// Get the toggle switch element
+const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
 
-const setError = (element, message) => {
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
-
-    errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('success');
+// Function to toggle dark mode
+function toggleDarkMode() {
+    if (toggleSwitch.checked) {
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+    }
 }
 
-const isValidEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
+// Event listener for toggle switch change
+toggleSwitch.addEventListener('change', toggleDarkMode);
+
+// Check the initial state of the toggle switch
+if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    toggleSwitch.checked = false;
+    toggleDarkMode();
 }
-
-const setSuccess = (element) => { 
-    const inputControl = element.parentElement;
-    inputControl.classList.remove('error');
-    inputControl.classList.add('success');
-}
-
-const validateInputs = () => {
-    const emailValue = email.value.trim();
-    const lastnameValue = lastname.value.trim();
-    const firstnameValue = firstname.value.trim();
-
-    if (emailValue === '') {
-        setError(email, 'Email is required');
-    } else if (!isValidEmail(emailValue)) { 
-        setError(email, 'Please enter a valid email address');
-    } else {
-        setSuccess(email); 
-    }
-
-    if (lastnameValue === '') {
-        setError(lastname, 'Last Name is required');
-    } else {
-        setSuccess(lastname); 
-    }
-
-    if (firstnameValue === '') {
-        setError(firstname, 'First Name is required');
-    } else {
-        setSuccess(firstname); 
-    }
-};
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    validateInputs();
-});
-
-// Validate inputs on input event
-firstname.addEventListener('input', validateInputs);
-lastname.addEventListener('input', validateInputs);
-email.addEventListener('input', validateInputs);
