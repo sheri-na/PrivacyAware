@@ -1,7 +1,6 @@
-// Get the toggle switch element
+//Toggle
 const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
 
-// Function to toggle dark mode
 function toggleDarkMode() {
     if (toggleSwitch.checked) {
         document.body.classList.remove('light-mode');
@@ -12,11 +11,10 @@ function toggleDarkMode() {
     }
 }
 
-// Event listener for toggle switch change
 toggleSwitch.addEventListener('change', toggleDarkMode);
 
-// Check the initial state of the toggle switch
 if (window.matchMedia('(prefers-color-scheme: light)').matches) {
     toggleSwitch.checked = false;
     toggleDarkMode();
 }
+// Form Validation

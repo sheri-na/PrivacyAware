@@ -159,7 +159,7 @@ body {
 .light-mode input{
   color: white;
 }
-.light-mode .input-control input {
+.light-mode input {
   background-color: black; 
 }
 
@@ -401,15 +401,7 @@ a {
   margin-bottom: 25px;
 }
 
-input {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 30px;
-}
 
-.left-side .button2 {
-  float: right;
-}
 
 
 /*Form */
@@ -417,13 +409,9 @@ input {
 input {
   text-align: center;
   font-size: 16px;
+  width: 100%;
   height: 60px;
-  margin-bottom: 0%;
-}
-
-.input-control {
-  position: relative; 
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 input::placeholder {
@@ -432,32 +420,45 @@ input::placeholder {
   text-align: left;
 }
 
-input {
-  text-align: center;
-  font-size: 16px;
-}
-
-.input-control {
-  position: relative;
-}
-
-.input-control input {
+.formGroup input {
   border: none; 
   padding: 10px;
   width: 100%; 
   box-sizing: border-box; 
   border-bottom: 2px solid #d2d2d2; 
 }
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #ff2424; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}
+.icon-container {
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.error-icon img {
+  width: 70px;
+  height:70px;
+  display:none;
+}
+.success-icon img {
+  width: 70px;
+  height:70px;
+  display:none;
+}
+
+
+/*
 .input-control input:focus {
   outline: 0;
-  border-bottom: 3px solid #00f900; /* Border color when focused */
-}
-  /*Petition*/
-  #signup-container {
-    float: right;
-    margin-right: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 200px; /* Adjust as needed */
-  }
+  border-bottom: 3px solid #00f900; Border color when focused */
+

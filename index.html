@@ -97,21 +97,46 @@
                 </div>
           </div>
           <div class = "left-side">
-             <form id="form" action="/submit" method="post">
-                   <div class = "input-control">
-                <input id = "firstname" name = "firstname" type="text" placeholder="First Name">
-                     <div class="error" id="firstNameError"></div>
-                   </div>
-                      <div class = "input-control">
-                <input id = "lastname" name = "lastname"type="text" placeholder="Last Name">
-                        <div class="error" id="lastNameError"></div>
-             </div>
-             <div class = "input-control">
-                <input id = "email" name = "email" type="email" placeholder="Email Address">
-                  <div class="error" id="emailError"></div>
-       </div>
-            <button type = "submit" id = "action" class="button2">Sign Now</button>
-                </form>
+            <form id="form">
+              <div class="formGroup">
+                <input required id="firstname" name="firstname"type="text" placeholder="First Name">
+                <span class="icon-container">
+                    <span class="error-icon">
+                        <img src="img/icon1.png" alt="Error Icon">
+                    </span>
+                    <span class="success-icon">
+                        <img src="img/icon2.png" alt="Success Icon">
+                    </span>
+                </span>
+              </div>
+                <div class="error"></div>
+              <div class="formGroup">
+                <input required id="lastname" name="lastname" type="text" placeholder="Last Name">
+                <span class="icon-container">
+                    <span class="error-icon">
+                        <img src="img/icon1.png" alt="Error Icon">
+                    </span>
+                    <span class="success-icon">
+                        <img src="img/icon2.png" alt="Success Icon">
+                    </span>
+                </span>
+              </div>
+                <div class="error"></div>
+              <div class="formGroup">
+                <input required id="email" name="email" type="email" placeholder="Email Address">
+                <span class="icon-container">
+                    <span class="error-icon">
+                        <img src="img/icon1.png" alt="Error Icon">
+                    </span>
+                    <span class="success-icon">
+                        <img src="img/icon2.png" alt="Success Icon">
+                    </span>
+                </span>
+              </div>
+                <div class="error"></div>
+                </div>
+               <button type="submit" class="button2">Sign Now</button>
+            </form>
           </div>
 
           <div class ="right-side">
