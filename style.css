@@ -98,6 +98,7 @@ body {
   background-color: #27FFFF;
   cursor: pointer;
   border: 1px solid transparent;
+   margin-left: 5em;
 }
 /* Dark Mode Styles */
 .dark-mode .section-1,.dark-mode .section-2,
@@ -125,7 +126,7 @@ body {
   background-color: #D9D9D9;
 }
 .dark-mode input{
-  color: white;
+  color: black;
 }
 .dark-mode input::placeholder {
     color: black;
@@ -455,10 +456,41 @@ input::placeholder {
   height:70px;
   display:none;
 }
+#names-list {
+  margin-top: 20px;
+}
 
+#names-list div {
+  margin-bottom: 5px;
+ background-color: black;
+  color: white;
+}
+.bottom{
+  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.left-side4 {
+   text-align: left;
+   width: 50%;
+   margin-left: 30px;
+ }
+.box {
+  background-color: green; 
+  float: right;
+  height: 40px;
+}
+
+.right-side4 {
+  text-align: right; 
+  width: 50%;
+  margin-right: 30px;
+}
 /*
 .input-control input:focus {
-  outline: 0;
+  outline: 0;`
   border-bottom: 3px solid #00f900; Border color when focused */
 
