@@ -1,29 +1,36 @@
- <!DOCTYPE html>
- <html lang = "en">
+<!DOCTYPE html>
+<html lang = "en">
 
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width">
-   <title>Privacy Aware</title>
-   <link href="reset.css" rel="stylesheet" type="text/css" />
-   <link href="style.css" rel="stylesheet" type="text/css" />
-   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <!--Playfair-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <!--Inter-->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+  <body class="dark-mode">
 
- </head>
-
- <body>
-   <!--navbar-->
-   <ul class = "navbar">
-     <li><a href = "about.html" >About Us </a></li>
-     <li><a href = "news.html" >News</a></li>
-     <li><a href = "resources.html" >Resources</a></li>
-     <li><a href = "tips.html" >Tips</a></li>
-
-   </ul>
-
-
-
-   <script src="script.js"></script>
- </body>
-
- </html>
+    <header>
+      <!--Navbar-->
+      <div class="navbar">
+        <a href="index.html"><img id="logo" src="img/logo.png"></a>
+        <div class="tabs" id="words">
+          <li><a href="about.html">About Us </a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </header>

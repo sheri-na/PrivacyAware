@@ -456,18 +456,10 @@ input::placeholder {
   height:70px;
   display:none;
 }
-#names-list {
-  margin-top: 20px;
-}
 
-#names-list div {
-  margin-bottom: 5px;
- background-color: black;
-  color: white;
-}
+
 .bottom{
   display:flex;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -478,11 +470,6 @@ input::placeholder {
    width: 50%;
    margin-left: 30px;
  }
-.box {
-  background-color: green; 
-  float: right;
-  height: 40px;
-}
 
 .right-side4 {
   text-align: right; 
