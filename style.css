@@ -1,4 +1,4 @@
-/*Grid*/
+/*Grid
 body::before {
   content: '';
   position: fixed;
@@ -10,12 +10,14 @@ body::before {
   pointer-events: none;
   z-index: 9999;
 }
+*/
 body {
   background-color: transparent;
   margin: 0;
   padding: 0;
 
 }
+
 .navbar {
   background-color: #000;
   width: 100%;
@@ -40,8 +42,8 @@ body {
 .section-2 {
   width: 100%;
   height: auto;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +52,8 @@ body {
 .section-3 {
   width: 100%;
   height: auto;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 8%;
+  padding-bottom: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +62,8 @@ body {
 .section-4 {
   width: 100%;
   height: auto;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,14 +73,14 @@ body {
   width: 100%;
   height: auto;
   padding-top: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
 }
 
 .footer {
   width: 100%;
   height: auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 4%;
+  padding-bottom: 5%;
   background-color: rgba(12, 12, 12, 0.97);
 }
 
@@ -90,6 +92,7 @@ body {
   cursor: pointer;
   border: 1px solid transparent;
 }
+
 .button2 {
   width: 13rem;
   height: 4rem;
@@ -98,13 +101,18 @@ body {
   background-color: #27FFFF;
   cursor: pointer;
   border: 1px solid transparent;
-   margin-left: 5em;
+  margin-left: auto;
+  display: block;
 }
+
 /* Dark Mode Styles */
-.dark-mode .section-1,.dark-mode .section-2,
-.dark-mode .section-3, .dark-mode .section-4,
+.dark-mode .section-1,
+.dark-mode .section-2,
+.dark-mode .section-3,
 .dark-mode .section-5,
-.dark-mode .footer, .dark-mode .top , .dark-mode .arrow{
+.dark-mode .footer,
+.dark-mode .top,
+.dark-mode .arrow {
   color: white;
 }
 
@@ -112,64 +120,100 @@ body {
 .dark-mode .section-3 {
   background-color: rgba(7, 7, 7, 0.40);
 }
-.dark-mode .section-5{
+
+.dark-mode .section-5 {
   background-color: rgba(150, 150, 150, 0.1);
 }
-
-.dark-mode .section-2,
-.dark-mode .section-4 {
+.dark-mode #mode-image {
+    content: url('img/img5.png');
+    width: 105%;
+    height: 105%;
+}
+.dark-mode #mode-image2 {
+    content: url('img/img7.png');
+    width: 80%;
+    height: 80%;
+}
+.dark-mode .section-2{
   background-color: #000;
 }
-
+.dark-mode .section-4 {
+  background-color: whitesmoke;
+}
 
 .dark-mode .button {
-  background-color: #D9D9D9;
+  background-color: whitesmoke;
 }
-.dark-mode input{
+
+.dark-mode input {
   color: black;
 }
+
 .dark-mode input::placeholder {
-    color: black;
-}
-/* Light Mode Styles */
-.light-mode .section-1, .light-mode.section-2,
-.light-mode .section-3, .light-mode .section-4,
-.light-mode .section-5,  .light-mode .footer, .light-mode  .top , .light-mode .arrow{
   color: black;
+}
+
+/* Light Mode Styles */
+.light-mode .section-1,
+.light-mode.section-2,
+.light-mode .section-3,
+.light-mode .section-5,
+.light-mode .footer,
+.light-mode .top,
+.light-mode .arrow {
+  color: black;
+}
+.light-mode .section-4{
+  color: white;
 }
 .light-mode .section-1,
 .light-mode .section-3 {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.light-mode.section-5{
+.light-mode #mode-image {
+    content: url('img/img3.png');
+    width: 105%;
+    height: 105%;
+}
+.light-mode #mode-image2  {
+    content: url('img/img6.png');
+    width: 80%;
+    height: 80%;
+}
+.light-mode.section-5 {
   background-color: #FFFDFD;
 }
 
-.light-mode .section-2,
-.light-mode .section-4{
+.light-mode .section-2{
   background-color: #F1F0F0;
 }
-
-.light-mode input::placeholder {
-    color: white;
+.light-mode .section-4 {
+  background-color: black;
 }
+.light-mode input::placeholder {
+  color: white;
+}
+
 .light-mode .button {
   background-color: black;
   color: white;
 }
-.light-mode input{
+
+.light-mode input {
   color: white;
 }
+
 .light-mode input {
-  background-color: black; 
+  background-color: black;
 }
 
 
 
 /*Universal*/
-.fontsize{
+.fontsize {
   font-size: 17px;
 }
+
 .right-side {
   text-align: left;
   width: 50%;
@@ -202,13 +246,13 @@ body {
   font-style: normal;
 }
 
-#sub-title {
+#sub-title  {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings:
-    "slnt" 0;
+  "slnt" 0;
 }
 
 #words,
@@ -257,14 +301,50 @@ body {
   align-items: center;
   margin-right: 40px;
 }
-
+/* Hover Effect- NavBar*/
 .tabs a {
   color: white;
   text-decoration: none;
   font-size: 14px;
   margin-right: 50px;
+  padding-bottom: 0.25rem;
+   position: relative;
 }
-
+.tabs a::before {
+  content: "";
+  position:absolute;
+  left: 0;
+  bottom:0;
+  width:0%;
+  height: 2px;
+  background-color: #27FFFF;
+  transition: width 0.25s ease-out;
+}
+.tabs a:hover::before {
+  width: 100%;
+}
+/* Hover Effect - Footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 50px;
+  padding-bottom: 0.25rem;
+   position: relative;
+}
+.footer ul a::before {
+  content: "";
+  position:absolute;
+  left: 0;
+  bottom:0;
+  width:0%;
+  height: 2px;
+  background-color: #27FFFF;
+  transition: width 0.25s ease-out;
+}
+.footer ul a:hover::before {
+  width: 100%;
+}
 /*Toggle*/
 
 .switch {
@@ -360,9 +440,14 @@ a {
   text-decoration: none;
 }
 
+
 /* Section 3*/
 .heading2 {
   font-size: 2rem;
+}
+#mode-image2{
+  margin-left: 10%;
+
 }
 /* Section 4*/
 .left-side2 {
@@ -406,6 +491,13 @@ a {
 
 
 /*Form */
+.bottom-class {
+  display: flex;
+}
+
+#name-list {
+  text-align: center;
+}
 
 input {
   text-align: center;
@@ -422,12 +514,13 @@ input::placeholder {
 }
 
 .formGroup input {
-  border: none; 
+  border: none;
   padding: 10px;
-  width: 100%; 
-  box-sizing: border-box; 
-  border-bottom: 2px solid #d2d2d2; 
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #d2d2d2;
 }
+
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -435,49 +528,102 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
-.error {
-  color: #ff2424; 
-  padding-top: 0.5rem; 
-  padding-bottom: 0.5rem; 
-}
 .icon-container {
-    position: absolute;
-    right: 0;
-    top: -5px;
+  position: absolute;
+  right: 0;
+  top: -5px;
 }
 
 .error-icon img {
   width: 70px;
-  height:70px;
-  display:none;
+  height: 70px;
+  display: none;
+  padding: 6px;
 }
+
 .success-icon img {
   width: 70px;
-  height:70px;
-  display:none;
+  height: 70px;
+  display: none;
+  
 }
 
 
-.bottom{
-  display:flex;
+.bottom {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .left-side4 {
-   text-align: left;
-   width: 50%;
-   margin-left: 30px;
- }
+  text-align: left;
+  width: 50%;
+  margin-left: 30px;
+}
 
 .right-side4 {
-  text-align: right; 
+  text-align: right;
   width: 50%;
   margin-right: 30px;
 }
-/*
-.input-control input:focus {
-  outline: 0;`
-  border-bottom: 3px solid #00f900; Border color when focused */
+.name-list li {
+  list-style: none; 
+  font-size: 40px; 
+}
+.typewriter {
+  overflow: hidden; /* Hide overflow */
+  border-right: .15em solid black; /* Typing cursor */
+  white-space: nowrap; /* Keep text in one line */
+  margin: 0; /* Optionally adjust margin */
+  padding: 0; /* Optionally adjust padding */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Apply typewriter animation with delays to slow down the animation */
+.typewriter-animation {
+  animation: typing 4s steps(40, end) forwards; /* Increase duration and steps */
+}
+.modal {
+
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+  position: absolute;
+  background-color: whitesmoke;
+  display: none;
+}
+
+
+/* Footer */
+.footer img{
+  margin-left: 30%;
+}
+.top-footer, .bottom-footer {
+    display: flex; 
+    list-style-type: none; 
+    align-items: center;
+}
+
+.top-footer li {
+    margin-right: 3em;
+    margin-left: 1em;
+    display: inline-block;
+}
+.bottom-footer{
+  margin-left: 13%;
+}
+.bottom-footer li {
+  margin-right: 3em;
+  margin-left: 1em;
+  display: inline-block;
+}
+.top-footer a, .bottom-footer a {
+    text-decoration: none; 
+    color: white; 
+}
 
