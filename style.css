@@ -682,15 +682,17 @@ input::placeholder {
   font-size: 40pt;
   display: inline-block;
   border-bottom: 4px solid #27FFFF;
+  border-radius: 2px;
   padding-right: 13px;
+  padding-bottom: 10px;
 }
 .p-about{
   font-size: 13pt;
 }
-.container1{
-  text-align: center;
+.slides{
+  margin:0;
+  color: white;
+  display:flex;
+  justify-content: center;
 }
-.container1 img{
-  dispay:block;
-  
-}
+
