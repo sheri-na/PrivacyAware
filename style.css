@@ -1,4 +1,4 @@
-/*Grid
+/*Grid*/
 body::before {
   content: '';
   position: fixed;
@@ -10,7 +10,7 @@ body::before {
   pointer-events: none;
   z-index: 9999;
 }
-*/
+
 body {
   background-color: transparent;
   margin: 0;
@@ -42,8 +42,8 @@ body {
 .section-2 {
   width: 100%;
   height: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,13 +126,13 @@ body {
 }
 .dark-mode #mode-image {
     content: url('img/img5.png');
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    height: 110%;
 }
 .dark-mode #mode-image2 {
     content: url('img/img7.png');
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 .dark-mode .section-2{
   background-color: #000;
@@ -172,13 +172,13 @@ body {
 }
 .light-mode #mode-image {
     content: url('img/img3.png');
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    height: 110%;
 }
 .light-mode #mode-image2  {
     content: url('img/img6.png');
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 .light-mode.section-5 {
   background-color: #FFFDFD;
@@ -217,13 +217,8 @@ body {
 .right-side {
   text-align: left;
   width: 50%;
-  margin-right: 50px;
-}
-
-.left-side {
-  text-align: left;
-  width: 50%;
-  margin-left: 50px;
+  margin-right: 45px;
+  margin-left: 15px;
 }
 
 .text-box2 {
@@ -236,6 +231,7 @@ body {
 
 .heading {
   font-size: 2.5rem;
+
 }
 
 /*Font*/
@@ -266,7 +262,7 @@ body {
     "slnt" 0;
 }
 
-#headline {
+#headline, .h-about {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -292,7 +288,8 @@ body {
   max-width: 100px;
   height: auto;
   margin: 0px;
-  padding-left: 40px;
+  padding-left: 25px;
+  padding-top: 0.25rem;
 }
 
 .tabs {
@@ -301,6 +298,37 @@ body {
   align-items: center;
   margin-right: 40px;
 }
+/*Hamburger*/
+.hamburger{
+  position:absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.hamburger .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* Responsive Navbar*/
+@media (max-width:800px){
+    .hamburger{
+      display:flex;
+      margin-right: 30px;
+    }
+    .tabs{
+      display:none;
+      width: 100%;
+    }
+}
+
+
+
 /* Hover Effect- NavBar*/
 .tabs a {
   color: white;
@@ -430,6 +458,8 @@ input:checked+.slider:before {
   margin-top: 30px;
 }
 
+
+
 /* Section 2*/
 .arrow {
   font-size: 1.4rem;
@@ -439,7 +469,11 @@ input:checked+.slider:before {
 a {
   text-decoration: none;
 }
-
+.left-side2 {
+  text-align: left;
+  width: 50%;
+   margin-right: 20px;
+}
 
 /* Section 3*/
 .heading2 {
@@ -448,6 +482,11 @@ a {
 #mode-image2{
   margin-left: 10%;
 
+}
+.left-side3 {
+  text-align: left;
+  width: 50%;
+  margin-left: 80px;
 }
 /* Section 4*/
 .left-side2 {
@@ -494,7 +533,9 @@ a {
 .bottom-class {
   display: flex;
 }
-
+#form{
+  margin-left: 40px;
+}
 #name-list {
   text-align: center;
 }
@@ -626,4 +667,30 @@ input::placeholder {
     text-decoration: none; 
     color: white; 
 }
+/*About Us*/
+.box{
+  margin-top: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color:white;
+}
 
+.about{
+  background-color:rgba(0, 0, 0, 0.94); ;
+}
+.h-about{
+  font-size: 40pt;
+  display: inline-block;
+  border-bottom: 4px solid #27FFFF;
+  padding-right: 13px;
+}
+.p-about{
+  font-size: 13pt;
+}
+.container1{
+  text-align: center;
+}
+.container1 img{
+  dispay:block;
+  
+}

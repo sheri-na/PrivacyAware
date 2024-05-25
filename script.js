@@ -79,3 +79,7 @@ form.addEventListener('submit', function(event) {
   // Reset the form after submission
   form.reset();
 });
+//Scroll Animations
+
+//Hamburger 
+
