@@ -695,4 +695,25 @@ input::placeholder {
   display:flex;
   justify-content: center;
 }
-
+.container1{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
+}
+.container1 p{
+  font-size:20px;
+  padding-top: 170px;
+  margin-left:38%;
+  position: absolute;
+}
+/*News*/ 
+.news{
+  background-color: #F5F5F5;
+  width: 100%;
+  height: auto;
+}
+.left{
+  display:flex;
+  justify-content: center;
+}
