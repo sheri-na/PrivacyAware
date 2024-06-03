@@ -80,6 +80,8 @@ form.addEventListener('submit', function(event) {
   form.reset();
 });
 //Scroll Animations
-
+window.addEventListener('scroll',function()){
+  const scrollPo
+}
 //Hamburger 
 
